@@ -1,3 +1,43 @@
+.key {
+  margin: 0 -0.4em 0 -0.4em;
+  position: relative;
+  float: left;
+}
+
+.white-pressed:active {
+  border-top: 1px solid hsl(0, 0%, 47%);
+  border-left: 1px solid hsl(0, 0%, 60%);
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+  box-shadow: 2px 0 3px var(--black-10) inset, -5px 5px 20px var(--black-20) inset,
+    0 0 3px var(--black-20);
+  background: linear-gradient(to bottom, white 0%, hsl(0, 0%, 91%) 100%);
+  outline: none;
+}
+
+.black-pressed:active {
+  box-shadow: -1px -1px 2px var(--white-20) inset, 0 -2px 2px 3px var(--black-60) inset,
+    0 1px 2px var(--black-50);
+  background: linear-gradient(to right, hsl(0, 0%, 27%) 0%, hsl(0, 0%, 13%) 100%);
+  outline: none;
+}
+
+.white {
+  border-radius: 3px;
+}
+
+.black {
+  border-radius: 4px;
+}
+
+.black-color {
+  background-color: #161616 !important;
+  bottom: 0 !important;
+  position: absolute;
+  width: 100%;
+  border-radius: 2px;
+  opacity: 20;
+}
+
 .App {
   text-align: center;
 }
